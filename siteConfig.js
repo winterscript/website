@@ -9,21 +9,12 @@
 // site configuration options.
 
 // List of projects/orgs using your project for the users page.
-const users = [
-  {
-    caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true
-  }
-];
+const users = [];
 
 const siteConfig = {
   title: 'WinterScript', // Title for your website.
   tagline: 'A pure subset of JavaScript',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
+  url: 'https://winterscript.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -89,8 +80,8 @@ const siteConfig = {
   cleanUrl: true,
 
   // Open Graph and Twitter card images.
-  ogImage: 'img/undraw_online.svg',
-  twitterImage: 'img/undraw_tweetstorm.svg'
+  ogImage: 'img/logo@2x.png',
+  twitterImage: 'img/logo@2x.png'
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
