@@ -24,7 +24,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="nav-footer" id="footer">
-        {/* <section className="sitemap">
+        <section className="sitemap">
           <a href={this.props.config.baseUrl} className="nav-home">
             {this.props.config.footerIcon && (
               <img
@@ -35,7 +35,7 @@ class Footer extends React.Component {
               />
             )}
           </a>
-          <div>
+          {/* <div>
             <h5>Docs</h5>
             <a href={this.docUrl('doc1.html', this.props.language)}>
               Getting Started (or other categories)
@@ -44,10 +44,10 @@ class Footer extends React.Component {
             <a href={this.docUrl('doc3.html', this.props.language)}>
               API Reference (or other categories)
             </a>
-          </div>
+          </div> */}
           <div>
             <h5>Community</h5>
-            <a href={this.pageUrl('users.html', this.props.language)}>User Showcase</a>
+            {/* <a href={this.pageUrl('users.html', this.props.language)}>User Showcase</a>
             <a
               href="https://stackoverflow.com/questions/tagged/"
               target="_blank"
@@ -55,12 +55,12 @@ class Footer extends React.Component {
             >
               Stack Overflow
             </a>
-            <a href="https://discordapp.com/">Project Chat</a>
-            <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
+            <a href="https://discordapp.com/">Project Chat</a> */}
+            <a href="https://twitter.com/winterscript1" target="_blank" rel="noreferrer noopener">
               Twitter
             </a>
           </div>
-          <div>
+          {/* <div>
             <h5>More</h5>
             <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
             <a href="https://github.com/">GitHub</a>
@@ -98,8 +98,8 @@ class Footer extends React.Component {
                 />
               </div>
             )}
-          </div>
-        </section> */}
+          </div> */}
+        </section>
 
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
