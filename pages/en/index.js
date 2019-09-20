@@ -77,7 +77,7 @@ class HomeSplash extends React.Component {
         <Block>
           {[
             {
-              content: 'WinterScript is a repository of JavaScript you can trust' + 'Types',
+              content: 'WinterScript is a repository of JavaScript you can trust',
               image: `${baseUrl}img/3.png`,
               imageAlign: 'bottom'
             }
