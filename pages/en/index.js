@@ -13,6 +13,12 @@ const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
+const Block = props => (
+  <Container padding={['bottom', 'top']} id={props.id} background={props.background}>
+    <GridBlock align="center" contents={props.children} layout={props.layout} />
+  </Container>
+);
+
 class HomeSplash extends React.Component {
   render() {
     const { siteConfig, language = '' } = this.props;
@@ -60,7 +66,6 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/logo@2x.png`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
@@ -69,6 +74,15 @@ class HomeSplash extends React.Component {
             <Button href={docUrl('doc2.html')}>Example Link 2</Button>  */}
           </PromoSection>
         </div>
+        <Block>
+          {[
+            {
+              content: 'WinterScript is a repository of JavaScript you can trust' + 'Types',
+              image: `${baseUrl}img/3.png`,
+              imageAlign: 'bottom'
+            }
+          ]}
+        </Block>
       </SplashContainer>
     );
   }
@@ -109,13 +123,13 @@ class Index extends React.Component {
     );
 
     const Description = () => (
-      <Block background="dark">
+      <Block background="dark" layout="fourColumn">
         {[
           {
-            content: 'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
-            imageAlign: 'right',
-            title: 'Description'
+            content: 'WinterScript is a repository of JavaScript you can trust' + 'Types',
+            image: `${baseUrl}img/3.png`,
+            imageAlign: 'bottom',
+            title: 'Introduction'
           }
         ]}
       </Block>
@@ -186,11 +200,11 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
+          {/* <Description /> */}
           {/* <TryOut /> */}
           {/* <Features />
           <FeatureCallout />
           <LearnHow />
-          <Description />
           <Showcase /> */}
         </div>
       </div>

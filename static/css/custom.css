@@ -5,6 +5,10 @@ body {
   color: #fff;
 }
 
+.lightBackground {
+  color: #515d70;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
