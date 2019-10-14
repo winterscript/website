@@ -9,6 +9,15 @@ body {
   color: #515d70;
 }
 
+#editor {
+  text-align: left;
+  z-index: 10000;
+  overflow: visible;
+  height: 100%;
+  resize: vertical;
+  overflow: auto;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
